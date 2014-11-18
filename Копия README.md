@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Kohana PHP Framework
 
 [Kohana](http://kohanaframework.org/) is an elegant, open source, and object oriented HMVC framework built using PHP5, by a team of volunteers. It aims to be swift, secure, and small.
@@ -18,9 +17,3 @@ If you've stumbled across a bug, please help us out by [reporting the bug](http:
 * Actual result
 
 This will help us to fix the bug as quickly as possible, and if you'd like to fix it yourself feel free to [fork us on GitHub](https://github.com/kohana) and submit a pull request!
-=======
-dn.com
-======
-
-dn.com
->>>>>>> FETCH_HEAD
