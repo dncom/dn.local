@@ -1,0 +1,258 @@
+#body
+{
+float: left;
+max-width: 100%;
+background-image: url("../images/background.png");
+background-repeat: repeat;
+margin-left: 10%;
+margin-right: 10%;
+}
+
+
+#container
+{
+opacity: 0.85; 
+float: left;
+width: 300mm;
+
+
+}
+
+#header
+{
+   width: 100%; 
+   height: 175px;
+   
+    padding-right: 0px; 
+    
+    float: left; 
+    background-color: #0c2e50;
+    background-repeat: repeat;
+	
+
+}
+#header1 
+{
+
+float: left; 
+background: #0c2e50;
+width: 305px;
+}
+#header2 
+{
+    
+float: left; 
+background: #0c2e50;
+}
+#header3 
+{
+
+float: right; 
+background: #0c2e50;
+margin-right: 10px;
+padding: 2px;
+
+}
+
+#menu
+{
+    float: left; 
+background: green;
+    width: 100%;
+    height: 28px;
+     
+}
+
+#login
+{
+    float: left; 
+background: green;
+    width: 100%;
+    height: 100px;
+     
+    
+}
+
+
+
+
+#content
+{
+border-radius: 25px;
+width: 100%;
+min-height: 800px;
+
+
+}
+#content_left
+{
+float: left;
+width: 75%;
+min-height: 800px;
+background: blue;
+}
+
+#content_right
+{
+width: 25%;
+min-height: 800px;
+background: blue;
+float: right;
+
+}
+
+#avatar
+{
+
+float: left;
+width: 30%;
+min-height: 300px;
+background: yellow;
+}
+
+#info
+{
+width: 70%;
+min-height: 300px;
+background: orange;
+float: right;
+
+}
+
+#wall
+{
+width: 100%;
+height: 100%;
+background: red;
+float: left;
+}
+
+#wall1
+{
+width: 100%;
+min-height: 100px;
+background: white;
+float: left;
+}
+
+#wall2
+{
+width: 100%;
+min-height: 300px;
+background: red;
+float: left;
+
+}
+
+#people
+{
+width: 100%;
+min-height: 280px;
+background: black;
+float: left;
+}
+#music
+{
+width: 100%;
+min-height: 120px;
+background: red;
+float: left;
+}
+
+
+#video1
+{
+width: 100%;
+min-height: 200px;
+background: white;
+float: left;
+}
+#video2
+{
+width: 100%;
+min-height: 200px;
+background: yellow;
+float: left;
+}
+
+#aaa
+{
+  width: 100%;
+  height: 200%;
+max-height: 1000px;
+background: black;
+float: left;  
+}
+
+#sign
+{width: 100%;
+height: 300px;
+float: left;
+background-color: white;
+}
+
+#sign1
+{width: 100mm;
+height: 100%;
+float: left;
+background-color: pink;
+}
+
+#sign2
+{width: 100mm;
+height: 100%;
+float: left;
+background-color: green;
+}
+
+#sign3
+{width: 100mm;
+height: 100%;
+float: right;
+background-color: white; 
+}
+
+#sign31
+{width: 50mm;
+height: 50%;
+float: left;
+background-color: gray;
+}
+
+#sign32
+{width: 50mm;
+height: 50%;
+float: left;
+background-color: red;
+}
+#sign33
+{width: 50mm;
+height: 50%;
+float: left;
+background-color: yellow;
+}
+#sign34
+{width: 50mm;
+height: 50%;
+float: right;
+background-color: pink;
+}
+
+#table1
+{
+width: 100%;
+height: 100%;
+}
+
+#footer
+{
+border-radius: 5px;
+float: left;
+height: 20px;
+width: 100%;
+background-color:red;
+color: blue;
+}
+
+
+
