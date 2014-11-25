@@ -6,7 +6,8 @@
 <div id= "content">
     <div id = "content_left">
 	<div id = "avatar">
-            <?php  echo $unique_['name']." ".$unique_['patronomyc']." ".$unique_['surname']."<br/>" ; ?>
+            
+            <img src ="<?php echo URL::base(); ?>public/images/ava.jpg"   height =100% width = 100%/>
         </div>
 	<div id = "info">
             <div id ="slider">
