@@ -7,29 +7,38 @@ class Controller_Wall extends Controller {
     public function action_index()
     {
         $id = $this->request->param('id');
-        
         $content = View::factory('/wall')
                 ->bind('posts', $posts);
-         
-      
-       
         
+         $count = ORM::factory('post')
+                ->where('id', '=', $id)
+                ->find_all()
+                ->as_array();
         
-         if($_POST)
+      foreach($count as $number)
+{
+    $a[] = $number->post;  
+}
+$i = count($a)-1;
+
+         if(($_POST)&&($a[$i]!=Arr::get($_POST, 'post')))
         {
  
- $post = ORM::factory('post');
+$post = ORM::factory('post');
 $post->post = Arr::get($_POST, 'post');
 $post->id = $id;
 $post->save();
+       
 
-        }
-          $posts = ORM::factory('post')
+        } 
+        
+        $posts = ORM::factory('post')
                 ->where('id', '=', $id)
                 ->find_all()
-                ->as_array(); 
-          
-         
+                ->as_array();
+        
+       
+       
        $this->response->body($content);
       
     }

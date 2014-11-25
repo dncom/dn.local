@@ -9,16 +9,12 @@
 
 <?php 
 
-
-
 //echo print_r($posts)."<br/>" ;
 //echo $posts['post'];
 
 foreach($posts as $key => $post)
 {
-    $a[] = $post->post;
-  
-   
+    $a[] = $post->post;  
 }
 $i = count($a)-1;
  echo "<div id = wall1>";

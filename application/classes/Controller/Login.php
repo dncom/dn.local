@@ -6,11 +6,7 @@ class Controller_Login extends Controller_Common {
     public function action_index()
     
     { 
-        /* if ($Logged==true)
-        {
-           HTTP::redirect(URL::site()); 
-        }
-        else */
+      
             
         $content = View::factory('/login');
         $this->template->content = $content;

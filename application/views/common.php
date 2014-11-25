@@ -5,31 +5,67 @@
     <title><?php echo $title; ?></title>
     <meta name="description" content="<?php echo $description; ?>" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+<!-- <link href="<?php //echo URL::base(); ?>public/js/anythingSlider/anythingslider.css" 
+    rel="stylesheet" type="text/css" /> -->
+
+<link href="<?php echo URL::base(); ?>public/js/anythingSlider/theme-cs-portfolio.css" 
+    rel="stylesheet" type="text/css" />
+<link href="<?php echo URL::base(); ?>public/js/fancybox/jquery.fancybox-1.3.4.css" 
+    rel="stylesheet" type="text/css" />
+
 <script src="<?php echo URL::base(); ?>public/js/jquery-1.7.1.min.js"></script>
+<script src="<?php echo URL::base(); ?>public/js/jquery.easing.1.3.js"></script>
+<script src="<?php echo URL::base(); ?>public/js/anythingSlider/jquery.anythingslider.js"></script>
+<script src="<?php echo URL::base(); ?>public/js/fancybox/jquery.fancybox-1.3.4.min.js"></script>
+
+
+
+
 <?php foreach($styles as $style): ?>
     <link href="<?php echo URL::base(); ?>public/css/<?php echo $style; ?>.css" 
     rel="stylesheet" type="text/css" />
+    
     
 <?php endforeach; ?>
   <link rel="shortcut icon" href="<?php echo URL::base(); ?>public/images/favicon.png" type="image/png"/>  
   <script>
 $(document).ready(function()
-{
-    
-    
+{ //$('#slider').hide();
+    $('#slider').anythingSlider(
+            {
+        theme: "cs-portfolio", //поменял стандартную тему - эта больше дизайну сайта соответствует
+        easing: 'easeInOutBack', //анимация прокрутки
+        animationTime: 1000, //время анимации
+        buildStartStop: false //убрать кнопки Старт/Стоп     
+            }
+                );
     $('#wall2').hide();
-    $('#else').hide();
-    $('#main_info').click(function()
-    {
-        
-         $('#else').slideToggle(800);
-    });
-        
+     
     $('#wall1').click(function()
     {
         
          $('#wall2').slideToggle(800);
-    });
+         $('#sign').slideToggle(  //разобраться почему не работает функция Анимейт
+                 10000, 'easeOutBounce'
+                );
+         
+         
+         $('#footer').fadeToggle(10000,'easeOutBounce');
+    }); 
+    
+    $('#gallery a').fancybox({
+		overlayColor: '#060',
+		overlayOpacity: .3,
+		transitionIn: 'elastic',
+		transitionOut: 'elastic',
+		easingIn: 'easeInSine',
+		easingOut: 'easeOutSine',
+		titlePosition: 'outside' ,		
+		cyclic: true
+	});
+    
+    
 
 });
 </script>       
