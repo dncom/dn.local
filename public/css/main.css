@@ -139,30 +139,7 @@ div b
     text-align: center;
 }
 
-#wall
-{
-width: 100%;
-height: 100%;
-background: red;
-float: left;
-}
 
-#wall1
-{
-width: 100%;
-min-height: 100px;
-background: white;
-float: left;
-}
-
-#wall2
-{
-width: 100%;
-min-height: 300px;
-background: red;
-float: left;
-
-}
 
 #people
 {

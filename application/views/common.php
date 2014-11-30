@@ -1,5 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1-strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
     <title><?php echo $title; ?></title>
@@ -40,7 +39,8 @@ $(document).ready(function()
         buildStartStop: false //убрать кнопки Старт/Стоп     
             }
                 );
-    $('#wall2').hide();
+                //$('#wall2').hide();
+   
      
     $('#wall1').click(function()
     {
@@ -64,8 +64,19 @@ $(document).ready(function()
 		titlePosition: 'outside' ,		
 		cyclic: true
 	});
+    $('.iframe').fancybox({
+		width : '90%',
+		height : '90%',
+		titlePosition: 'outside'
+	});// конец fancybox
     
-    
+$('.comment2').hide();
+$('.comment1').click(function()
+    {
+        
+         $(this).next('.comment2').fadeToggle(800);
+         
+    }); 
 
 });
 </script>       
