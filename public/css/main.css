@@ -1,5 +1,5 @@
 #body
-{
+{  
 float: left;
 max-width: 100%;
 background-image: url("../images/background.png");
@@ -8,7 +8,7 @@ margin-left: 10%;
 margin-right: 10%;
 }
 
-
+/////
 #container
 {
 opacity: 0.85; 
